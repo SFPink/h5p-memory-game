@@ -88,7 +88,11 @@
         started = undefined;
       }
     };
-
+	
+	  self.totalTime = function(){
+  		var currentTime = (new Date().getTime() - started);
+  		return humanizeTime(Math.floor((totalTime + currentTime) / 1000));	
+  	};
   };
   
 })(H5P.MemoryGame);
