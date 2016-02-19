@@ -18,6 +18,10 @@
       current++;
       $container.text(current);
     };
+    	
+  	self.count = function(){
+  		return current;
+  	};
   };
 
 })(H5P.MemoryGame);
